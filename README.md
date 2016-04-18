@@ -22,7 +22,8 @@ Default is `/etc/supervisor.d`.
 Dependencies
 ------------
 
-juwai.python27
+- juwai.common
+- juwai.python27
 
 Example Playbook
 ----------------
