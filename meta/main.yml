@@ -1,6 +1,8 @@
+---
 galaxy_info:
   author: Juwai Limited
-  description: Juwai Limited
+  description: Ansible role for Supervisord
+  company: Juwai Limited
   license: MIT / BSD
   min_ansible_version: 2.0
 
