@@ -1,0 +1,2 @@
+---
+supervisord_config_dir: "/etc/supervisor.d"
