@@ -19,6 +19,3 @@ galaxy_info:
   #  - 2015.09
 
   galaxy_tags: [amazon, centos6, supervisord]
-
-dependencies:
-  - role: juwai.python27

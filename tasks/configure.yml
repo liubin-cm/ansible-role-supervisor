@@ -15,6 +15,12 @@
     owner: root
     group: root
     mode: 0755
+  register: result
+
+- name: Ensure systemd is reloaded if supervisord.service has changed
+  shell: systemctl daemon-reload
+  when: result|changed
+
 
 - name: ensure supervisord start on boot
   service: name=supervisord state=started enabled=yes

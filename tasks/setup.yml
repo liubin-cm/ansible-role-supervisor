@@ -1,8 +1,8 @@
 ---
+- name: install pip
+  yum: name=python-pip state=installed
 - name: install supervisord
   pip:
     name: supervisor
     state: present
-    executable: "{{ executable_pip }}"
-  environment:
-    PATH: /usr/local/bin:/usr/bin:{{ ansible_env.PATH }}
+    extra_args: -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
