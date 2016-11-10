@@ -1,7 +1,7 @@
 Ansible Role: Supervisor
 ========================
 
-Install Supervisor on CentOS servers.
+Install Supervisor on CentOS 7 servers. this role suit for china, pip source is http://pypi.douban.com/simple.
 
 Requirements
 ------------
@@ -22,14 +22,14 @@ Default is `/etc/supervisor.d`.
 Dependencies
 ------------
 
-- juwai.python27
+- python2.7
 
 Example Playbook
 ----------------
 
     - hosts: servers
       roles:
-        - juwai.supervisor
+        - liubin.supervisor
 
 License
 -------
